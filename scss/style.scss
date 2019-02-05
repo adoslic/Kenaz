@@ -1,9 +1,7 @@
-/**{
-  border: solid red 1px;
-}*/
 body{
   margin: 0;
   padding: 0;
+  background-color: #EEEEEE;
 }
 #menu{
   width: 100%;
@@ -13,7 +11,8 @@ body{
   width: 940px;
   margin: auto;
   position: relative;
-  height: 46px;
+  height: 50px;
+  //border: solid 1px red;
   .img{
     padding: 10px 15px;
     &:hover{
@@ -26,28 +25,27 @@ body{
   padding: 10px 15px;
   }
   a{
-  text-decoration: none;
-  color: white;
-} 
-}
-
-.left{
-  float: left;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-  .kenaz{
-    font-size: 21px;
+    text-decoration: none;
+    color: white;
   }
 }
-.right{
+.menu--left, .menu2--left{
+  float: left;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .kenaz{
+  font-size: 20px;
+  }
+}
+.menu--right{
   float: right;
   display: flex;
   align-items: center;
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 0;
   .media{
       font-size: 16px;
@@ -57,13 +55,13 @@ body{
 #menu2{
   width: 100%;
   background: #4D4382;
+  height: 50px;
   //border: solid 1px red;
 }
 #menu2_940{
   width: 940px;
   margin: auto;
   position: relative;
-  height: 47px;
   //border: solid 1px red;
   a{
     text-decoration: none;
@@ -74,13 +72,13 @@ body{
   .inline {
     //border: solid 1px red;
     display: inline-block;
-    padding: 11px 22px;
+    padding: 12.5px 22px;
   }
-
 }
 .menu2--blue{
   background-color: #299EC3;
   border-bottom: #299EC3 solid 4px;
+  //border: solid 1px red;
 }
 .menu2--orange{
   border-bottom: #EE6151 solid 4px;
@@ -96,4 +94,17 @@ body{
 }
 .menu2--gray{
   border-bottom: #A99765 solid 4px;
+}
+
+#containter{
+  width: 940px;
+  margin: auto;
+  //position: relative;
+  #banner-top{
+    margin: 20px 0;
+  }
+  //#main-container{
+   // margin-top: 20px;
+
+  //}
 }

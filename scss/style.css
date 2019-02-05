@@ -1,9 +1,7 @@
-/**{
-  border: solid red 1px;
-}*/
 body {
   margin: 0;
   padding: 0;
+  background-color: #EEEEEE;
 }
 
 #menu {
@@ -15,7 +13,7 @@ body {
   width: 940px;
   margin: auto;
   position: relative;
-  height: 46px;
+  height: 50px;
 }
 
 #menu_940 .img {
@@ -36,7 +34,7 @@ body {
   color: white;
 }
 
-.left {
+.menu--left, .menu2--left {
   float: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,11 +47,11 @@ body {
   left: 0;
 }
 
-.left .kenaz {
-  font-size: 21px;
+.menu--left .kenaz, .menu2--left .kenaz {
+  font-size: 20px;
 }
 
-.right {
+.menu--right {
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,24 +60,24 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 0;
 }
 
-.right .media {
+.menu--right .media {
   font-size: 16px;
 }
 
 #menu2 {
   width: 100%;
   background: #4D4382;
+  height: 50px;
 }
 
 #menu2_940 {
   width: 940px;
   margin: auto;
   position: relative;
-  height: 47px;
 }
 
 #menu2_940 a {
@@ -91,7 +89,7 @@ body {
 
 #menu2_940 .inline {
   display: inline-block;
-  padding: 11px 22px;
+  padding: 12.5px 22px;
 }
 
 .menu2--blue {
@@ -117,5 +115,14 @@ body {
 
 .menu2--gray {
   border-bottom: #A99765 solid 4px;
+}
+
+#containter {
+  width: 940px;
+  margin: auto;
+}
+
+#containter #banner-top {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

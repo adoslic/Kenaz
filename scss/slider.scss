@@ -1,0 +1,50 @@
+.slider--two, .slider--three{  
+    display: none;
+}  
+    .showSlide img {  
+        width: 100%;  
+    }  
+.slidercontainer {  
+    max-width: 940px;  
+    position: relative;  
+    margin: auto;  
+}  
+.left, .right {  
+    //cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 5px 20px;  
+    margin-top: -40px; 
+}  
+.right {  
+    right: 0;  
+    //border-radius: 3px 0 0 3px;  
+} 
+.sliderText {  
+    color: white;  
+    //font-size: 30px;  
+    padding: 8px 20px; 
+    margin: 0 15px; 
+    position: absolute;  
+    top: 55%;  
+    width: 100%;
+    .sliderText--one, .sliderText--two{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .sliderText--three{
+        font-size: 35px;
+        margin-bottom: 25px,
+    }
+    .sliderText--button{
+        border: solid white 1px;
+        width: 100px;
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}  
