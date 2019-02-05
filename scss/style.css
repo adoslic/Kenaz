@@ -6,28 +6,32 @@ body {
   padding: 0;
 }
 
-#up {
+#menu {
   width: 100%;
   background: #252525;
 }
 
-#up940 {
+#menu_940 {
   width: 940px;
   margin: auto;
   position: relative;
   height: 46px;
 }
 
-#up940 .img {
+#menu_940 .img {
   padding: 10px 15px;
 }
 
-.inline {
+#menu_940 .img:hover {
+  background-color: #303030;
+}
+
+#menu_940 .inline {
   display: inline-block;
   padding: 10px 15px;
 }
 
-a {
+#menu_940 a {
   text-decoration: none;
   color: white;
 }
@@ -58,11 +62,60 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
 }
 
 .right .media {
   font-size: 16px;
+}
+
+#menu2 {
+  width: 100%;
+  background: #4D4382;
+}
+
+#menu2_940 {
+  width: 940px;
+  margin: auto;
+  position: relative;
+  height: 47px;
+}
+
+#menu2_940 a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#menu2_940 .inline {
+  display: inline-block;
+  padding: 11px 22px;
+}
+
+.menu2--blue {
+  background-color: #299EC3;
+  border-bottom: #299EC3 solid 4px;
+}
+
+.menu2--orange {
+  border-bottom: #EE6151 solid 4px;
+}
+
+.menu2--green {
+  border-bottom: #84C14F solid 4px;
+}
+
+.menu2--lightblue {
+  border-bottom: #5DCFF3 solid 4px;
+}
+
+.menu2--yellow {
+  border-bottom: #FCC44D solid 4px;
+}
+
+.menu2--gray {
+  border-bottom: #A99765 solid 4px;
 }
 /*# sourceMappingURL=style.css.map */
