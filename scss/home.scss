@@ -1,0 +1,91 @@
+.content{
+    width: 940px;
+    margin: auto;
+
+    //.main-content{
+        //border: solid 1px red;
+    //padding: 20px 40px 20px 30px;
+        
+    //}
+    .side-content{
+        border: solid 1px red;
+        
+    }
+}
+.category{
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    //padding: 20px;
+    background-color: #FFFFFF;
+    //border-left: solid 10px #3677B5;
+    .titleOfArticle{
+        margin-bottom: 10px;
+    }
+    .img{
+        width: 100%;
+        margin-bottom: 5px;
+        //margin: 0;
+    }
+    .date {
+    //margin-top: 5px;
+    color: #797979;
+    font-size: 10px;
+    float: left;
+    margin-bottom: 5px;
+    }
+
+    .imgRight{
+        float: right;
+        //color: #797979;
+        //margin-top: 0;
+    }
+    .commentNumber{
+        color: #797979;
+        font-size: 10px;
+    }
+    .see-all{
+        float: right;
+        //border: solid 1px red;
+    }
+    .bla{
+        //border: solid 1px red;
+        //margin: 10px;
+        
+    }
+    .inline{
+        display: inline-block;
+    }
+    .description{
+        clear: both;
+        //border: solid 1px red;
+        //margin-top: 20px;
+        font-size: 12px;
+    }
+}
+.news{
+    border-left: solid 10px #3677B5;
+}
+.sport{
+    border-left: solid 10px #84C14F;
+    .img{
+        //width: 170px;
+        //margin-bottom: 0;
+    }
+}
+.business{
+    border-left: solid 10px #EE6151;
+    .img{
+        width: 120px;
+        margin-bottom: 30px;
+        
+    }
+    .description{
+        color: #797979;
+    }
+}
+.new-carousel{
+    border-left: solid 10px #FCC44D;
+    .imgSpace{
+        margin-left: 15px;
+    }
+}

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
         <link rel="stylesheet" href="scss/style.css">
         <link rel="stylesheet" href="scss/slider.css">
+        <link rel="stylesheet" href="scss/home.css">
         <title>Page Title</title>
 </head>
 <body>
 
     <div id="wrapper">
         <div id="header">
+            <!-- menu --> 
             <div id="menu">
                 <div id="menu_940">
                 <div class="menu--left">
@@ -24,7 +28,8 @@
                        
                 </div>
                 </div>
-            </div>    
+            </div>
+            <!-- menu 2 --> 
             <div id="menu2">
                 <div id="menu2_940">
                     <div class="menu2--left">
@@ -39,10 +44,10 @@
             </div>
         </div>
         <div id="containter">
-            <div id="banner-top">
+            <div class="banner banner-940x120">
                 <img src="img/940x120.png" alt="">
             </div>
-
+            <!-- slider --> 
             <div class="slidercontainer">  
                     <div class="showSlide slider--one">  
                         <img src="img/slider1.jpg" /> 
@@ -63,36 +68,221 @@
                     <a class="right" onclick="nextSlide(1)">
                     <img src="img/123.png" alt="">
                     </a>
-                    
-                    <div class="sliderText">
-                        <div class="inline sliderText--one">
-                            August 23, 2013
-                        </div>
-                        <div class="inline sliderText--two">
-                            <img src="img/comment.png" alt="">
-                            22 Comments
-                        </div>
-                        <div class="sliderText--three">
-                            'Margot' breathlessly reimagines Anne Frank's sister
-                        </div>
-                        <div class="sliderText--four">
-                            <a href=""><div class="sliderText--button">Read article</div></a>
+                    <!-- Tekst na sliderima -->  
+                    <div class="sliderTextContainer">
+                        <div class="sliderText sliderText-one">
+                            <div class="inline sliderText--one">
+                                August 23, 2013
+                            </div>
+                            <div class="inline sliderText--two">
+                                <img src="img/comment1.png" alt="">
+                                22 Comments
+                            </div>
+                            <div class="sliderText--three">
+                                'Margot' breathlessly reimagines Anne Frank's sister
+                            </div>
+                            <div class="sliderText--four">
+                                <a href=""><div class="sliderText--button">Read article</div></a>
+                            </div>
                         </div>
 
+                        <div class="sliderText sliderText-two">
+                            <div class="inline sliderText--one">
+                                August 23, 2014
+                            </div>
+                            <div class="inline sliderText--two">
+                                <img src="img/comment1.png" alt="">
+                                50 Comments
+                            </div>
+                            <div class="sliderText--three">
+                                'Margot' breathlessly reimagines Anne Frank's sister
+                            </div>
+                            <div class="sliderText--four">
+                                <a href=""><div class="sliderText--button">Read article</div></a>
+                            </div>
+                        </div>
+                        <div class="sliderText sliderText-three">
+                            <div class="inline sliderText--one">
+                                August 23, 2015
+                            </div>
+                            <div class="inline sliderText--two">
+                                <img src="img/comment1.png" alt="">
+                                70 Comments
+                            </div>
+                            <div class="sliderText--three">
+                                'Margot' breathlessly reimagines Anne Frank's sister
+                            </div>
+                            <div class="sliderText--four">
+                                <a href=""><div class="sliderText--button">Read article</div></a>
+                            </div>
+                        </div>
                     </div>
-
             </div> 
 
-            <!--<div id="main-container">
-                
+            <!-- glavni dio --> 
+            <div class="content">
+                <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                         <div class="category news">
+                            <div class="titleOfArticle inline"><h4>News</h4></div>
+                            <div class="inline see-all"><a href="">See all</a></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                        <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                
+                                        <div class="date inline">August 26, 2013</div>
+                                        <div class="imgRight inline bla"><img src="img/comment.png" alt=""><span class="commentNumber">5</span></div>
+                                    
+                                    <div class="description"><p>For Obama MLK's shadow looms large ahead od speech</p></div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                        
+                                        <div class="date inline">August 26, 2014</div>
+                                        <div class="imgRight inline bla"><img src="img/comment.png" alt=""><span class="commentNumber">7</span></div>
+                                        
+                                        <div class="description"><p>NASA releases portrait of a planet waving at Saturn</p></div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                        
+                                        <div class="date inline">August 26, 2015</div>
+                                        <div class="imgRight inline bla"><img src="img/comment.png" alt=""><span class="commentNumber">12</span></div>
+                                        
+                                        <div class="description"><p>Patriotsvv make cuts... and Tim Tebow survives (so far)</p></div>
+                                        </div>
+                            </div>
+                         </div> 
+                         <div class="category sport">
+                                <div class="titleOfArticle inline"><h4>Sport</h4></div>
+                                <div class="inline see-all"><a href="">See all</a></div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                            <div><img class="img" src="img/Layer 57.png" alt=""></div>
+    
+                                        <div class="date inline">August 26, 2013</div>
+                                        <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                            
+                                            <div class="date inline">August 26, 2014</div>
+                                            <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                            
+                                            <div class="date inline">August 26, 2015</div>
+                                            <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                            </div>
+                                </div>
+                        </div> 
+                        <div class="banner banner-620x120">
+                                <img src="img/620x120.png" alt="">
+                        </div>
+
+                        <div class="category business">
+                                <div class="titleOfArticle inline"><h4>Bussines</h4></div>
+                                <div class="inline see-all"><a href="">See all</a></div>
+                                <div class="row">
+                                        <div class="col-md-6 ">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div ><img class="img" src="img/Layer 57.png" alt=""></div>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                                            
+                                                <div class="date inline">August 26, 2013</div>
+                                                <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                                        
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6 ">
+                                                        <div ><img class="img" src="img/Layer 57.png" alt=""></div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                                                
+                                                    <div class="date inline">August 26, 2013</div>
+                                                    <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                                            
+                                                </div>
+                                                </div>
+                                                
+                                            </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6 ">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div ><img class="img" src="img/Layer 57.png" alt=""></div>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                                            
+                                                <div class="date inline">August 26, 2013</div>
+                                                <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                                        
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-6 ">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div ><img class="img" src="img/Layer 57.png" alt=""></div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                                                
+                                                    <div class="date inline">August 26, 2013</div>
+                                                    <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                                            
+                                                </div>
+                                                </div>
+                                                
+                                            </div>
+                                </div>
+                                
+                        </div>
+                        <div class="banner banner-620x120">
+                                <img src="img/620x120.png" alt="">
+                        </div>
+                        <div class="category new-carousel">
+                                <div class="titleOfArticle inline"><h4>New Carousel</h4></div>
+                                <div class="inline see-all">
+                                    <div class="imgRight inline imgSpace bla"><a onclick="NextSlide(-1)" href=""><img src="img/Shape 1.png" alt=""></a></div>
+                                    <div class="imgRight inline bla"><a onclick="NextSlide(1)" href=""><img src="img/Shape 2.png" alt=""></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 firstgroup">
+                                            <div class="firstGroup firstGroup-image"><img class="img" src="img/Layer 57.png" alt=""></div>
+    
+                                        <div class="date firstGroup firstGroup-date inline">August 26, 2013</div>
+                                        <div class="description firstGroup firstGroup-description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                    </div>
+                                    <div class="col-md-6 secondGroup">
+                                            <div><img class="img" src="img/img2.jpg" alt=""></div>
+                                            
+                                            <div class="date inline">August 26, 2014</div>
+                                            <div class="description"><p>NASA releases portrait of a planet waving at Saturn</p></div>
+                                        </div>
+                                </div>  
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="side-content">
+                        Some Content.. 
+                     </div>
+                </div>
             </div>
-            <div id="side-container">
-                
-                </div>     
-            -->
 
         </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>

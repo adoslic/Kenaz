@@ -1,0 +1,82 @@
+.content {
+  width: 940px;
+  margin: auto;
+}
+
+.content .side-content {
+  border: solid 1px red;
+}
+
+.category {
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  background-color: #FFFFFF;
+}
+
+.category .titleOfArticle {
+  margin-bottom: 10px;
+}
+
+.category .img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.category .date {
+  color: #797979;
+  font-size: 10px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.category .imgRight {
+  float: right;
+}
+
+.category .commentNumber {
+  color: #797979;
+  font-size: 10px;
+}
+
+.category .see-all {
+  float: right;
+}
+
+.category .inline {
+  display: inline-block;
+}
+
+.category .description {
+  clear: both;
+  font-size: 12px;
+}
+
+.news {
+  border-left: solid 10px #3677B5;
+}
+
+.sport {
+  border-left: solid 10px #84C14F;
+}
+
+.business {
+  border-left: solid 10px #EE6151;
+}
+
+.business .img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.business .description {
+  color: #797979;
+}
+
+.new-carousel {
+  border-left: solid 10px #FCC44D;
+}
+
+.new-carousel .imgSpace {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=home.css.map */
