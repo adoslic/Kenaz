@@ -253,36 +253,74 @@
                         <div class="category new-carousel">
                                 <div class="titleOfArticle inline"><h4>New Carousel</h4></div>
                                 <div class="inline see-all">
-                                    <div class="imgRight inline imgSpace bla"><a onclick="NextSlide(-1)" href=""><img src="img/Shape 1.png" alt=""></a></div>
-                                    <div class="imgRight inline bla"><a onclick="NextSlide(1)" href=""><img src="img/Shape 2.png" alt=""></a></div>
+                                    <div class="imgRight inline imgSpace bla hover" id="right-slide"><a><img class="changeBackground" src="img/Shape 11.png" alt=""></a></div>
+                                    <div class="imgRight inline bla hover" id="left-slide"><a ><img class="changeBackground" src="img/Shape 22.png" alt=""></a></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 firstgroup">
-                                            <div class="firstGroup firstGroup-image"><img class="img" src="img/Layer 57.png" alt=""></div>
+                                        <div class="firstGroup"><img id="firstGroup-image" class="img" src="img/Layer 57.png" alt=""></div>
     
-                                        <div class="date firstGroup firstGroup-date inline">August 26, 2013</div>
-                                        <div class="description firstGroup firstGroup-description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        <div id="firstGroup-date" class="date firstGroup inline">August 26, 2013</div>
+                                        <div id="firstGroup-description" class="description firstGroup"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
                                     </div>
                                     <div class="col-md-6 secondGroup">
-                                            <div><img class="img" src="img/img2.jpg" alt=""></div>
+                                        <div><img id="secondGroup-image" class="img" src="img/img2.jpg" alt=""></div>
                                             
-                                            <div class="date inline">August 26, 2014</div>
-                                            <div class="description"><p>NASA releases portrait of a planet waving at Saturn</p></div>
-                                        </div>
+                                        <div id="secondGroup-date" class="date inline">August 26, 2014</div>
+                                        <div id="secondGroup-description" class="description"><p>NASA releases portrait of a planet waving at Saturn</p></div>
+                                    </div>
                                 </div>  
-                        </div>    
+                        </div>
+                        
+                        <div class="category editorials inline">
+                                <div class="titleOfArticle inline"><h4>Editorials</h4></div>
+                                <div class="inline see-all">
+                                    <div class="imgRight inline center imgSpace bla" id="right-Slide"><a class="hover"><img class="changeBackground" src="img/Shape 1.png" alt=""></a></div>
+                                    <div class="imgRight inline center bla" id="left-Slide"><a class="hover"><img class="changeBackground" src="img/Shape 2.png" alt=""></a></div>
+                                </div>
+                                
+                                    <div class="firstgroup">
+                                        <div class="firstGroup"><img id="GroupOne-image" class="img" src="img/Layer 57.png" alt=""></div>
+    
+                                        <div id="GroupOne-date" class="date firstGroup inline">August 26, 2013</div>
+                                        <div id="GroupOne-description" class="description firstGroup"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                    </div>
+                                </div>    
+                        </div>
+
+
+                        <div class="category local-news inline">
+                                <div class="titleOfArticle inline"><h4>Local news</h4></div>
+                                <div class="inline see-all">
+                                    <div class="imgRight inline center imgSpace bla" id="Right-Slide"><a class="hover"><img class="changeBackground" src="img/Shape 1.png" alt=""></a></div>
+                                    <div class="imgRight inline center bla" id="Left-Slide"><a class="hover"><img class="changeBackground" src="img/Shape 2.png" alt=""></a></div>
+                                </div>
+                                
+                                    <div class="firstgroup">
+                                        <div class="firstGroup"><img id="GroupTwo-image" class="img" src="img/Layer 57.png" alt=""></div>
+    
+                                        <div id="GroupTwo-date" class="date firstGroup inline">August 26, 2013</div>
+                                        <div id="GroupTwo-description" class="description firstGroup"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                    </div>
+                                </div>  
+                        
                     </div>
-                </div>
                 <div class="col-md-4">
                     <div class="side-content">
                         Some Content.. 
-                     </div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
+            <div class="banner banner-940x120">
+                <img src="img/940x120.png" alt="">
+            </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/editorials.js"></script>
+    <script src="js/local-news.js"></script>
 </body>
 </html>

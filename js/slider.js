@@ -7,7 +7,7 @@ function nextSlide(n) {
   
 /*function currentSlide(n) {  
     displaySlides(slide_index = n);  
-} */ 
+} */
   
 
 function displaySlides(n) {  
