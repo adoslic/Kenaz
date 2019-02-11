@@ -99,9 +99,16 @@ body{
 #containter{
   width: 940px;
   margin: auto;
+  //border: solid red 1px;
   //position: relative;
   .banner{
     margin: 20px 0;
+  }
+  .banner-940x120{
+    width: 940px;
+  }
+  .banner-620x120{
+    width: 100%;
   }
   //#main-container{
    // margin-top: 20px;

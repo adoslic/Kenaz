@@ -125,4 +125,12 @@ body {
 #containter .banner {
   margin: 20px 0;
 }
+
+#containter .banner-940x120 {
+  width: 940px;
+}
+
+#containter .banner-620x120 {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

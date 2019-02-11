@@ -3,6 +3,11 @@
   margin: auto;
 }
 
+.content .main-content {
+  width: 620px;
+  margin-right: 20px;
+}
+
 .category {
   margin-bottom: 20px;
   padding: 20px 30px;
@@ -35,10 +40,6 @@
 
 .category .see-all {
   float: right;
-}
-
-.category .bla {
-  border: solid 1px red;
 }
 
 .category .inline {
