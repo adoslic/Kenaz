@@ -6,9 +6,11 @@
 .content .main-content {
   width: 620px;
   margin-right: 20px;
+  display: inline-block;
 }
 
 .category {
+  width: 620px;
   margin-bottom: 20px;
   padding: 20px 30px;
   background-color: #FFFFFF;

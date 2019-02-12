@@ -33,21 +33,21 @@ var carousel = [
         description2: "Patriotsvv make cuts... and Tim Tebow survives (so far)"
     }
 ];
-index=0;
-//var image = document.getElementById("firstGroup-image");
-//var date = document.getElementById("firstGroup-date");
-//var description = document.getElementById("firstGroup-description");
+var index=0;
+
 
 $(document).ready(function () {
     //console.log( $("#firstGroup-date"));
 
-    $("#firstGroup-image").attr("src",carousel[index].img);
+    /*$("#firstGroup-image").attr("src",carousel[index].img);
     $("#firstGroup-date").text(carousel[index].date);
     $("#firstGroup-description").text(carousel[index].description);
     $("#secondGroup-image").attr("src",carousel[index].img2);
     $("#secondGroup-date").text(carousel[index].date2);
-    $("#secondGroup-description").text(carousel[index].description2);
+    $("#secondGroup-description").text(carousel[index].description2);*/
 
+    //$("#firstGroup-image").attr("src",result.articles[0].urlToImage);
+    //console.log(A.articles[0].author);
     //$('#left-slide').click(next(1));
 
     
@@ -77,10 +77,3 @@ $("#left-slide").click(function(){
         $("#secondGroup-date").text(carousel[index].date2);
         $("#secondGroup-description").text(carousel[index].description2);
     });
-
-/*function next($index) {
-    $.fn.next = function(){
-        alert('button clicked');
-       //return this;
-    }; 
-}*/

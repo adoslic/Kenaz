@@ -1,6 +1,7 @@
 .side-content {
   width: 300px;
-  margin-left: 0;
+  display: inline-block;
+  float: right;
 }
 
 .side-content .popular {
@@ -50,16 +51,21 @@
   color: white;
 }
 
-.side-content .popular .middle .midle-one {
+.side-content .popular .middle .middle-one {
   border-bottom: solid #3E3668 1px;
 }
 
-.side-content .popular .middle .midle-one:hover {
+.side-content .popular .middle .middle-one:hover {
   background-color: #453C75;
 }
 
 .side-content .popular .middle .padding {
   padding: 20px 30px 20px 20px;
+  border-bottom: solid #3E3668 1px;
+}
+
+.side-content .popular .middle .padding:hover {
+  background-color: #453C75;
 }
 
 .side-content .popular .middle .inline {
@@ -199,10 +205,12 @@
 .side-content .envato .envato-word {
   font-size: 12px;
   color: #47639E;
+  cursor: pointer;
 }
 
 .side-content .envato button {
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .side-content .envato .envato-one {

@@ -3,10 +3,14 @@
 <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="scss/style.css">
-        <link rel="stylesheet" href="scss/slider.css">
-        <link rel="stylesheet" href="scss/home.css">
-        <link rel="stylesheet" href="scss/side-content.css">
+        <!--build:css css/styles.min.css-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/side-content.css">
+        <!--endbuild-->
+        
+
         <title>Page Title</title>
 </head>
 <body>
@@ -124,25 +128,24 @@
 
             <!-- glavni dio --> 
             <div class="content">
-                <div class="row">
-                <div class="col-md-8">
-                    <div class="main-content">
+                
+                    <div class="main-content inline">
                          <div class="category news">
                             <div class="titleOfArticle inline"><h4>News</h4></div>
                             <div class="inline see-all"><a href="">See all</a></div>
                             <div class="row">
                                 <div class="col-md-4">
-                                        <div><img class="img" src="img/Layer 57.png" alt=""></div>
+                                        <div><img class="img news-img" src="img/Layer 57.png" alt=""></div>
                                 
-                                        <div class="date inline">August 26, 2013</div>
-                                        <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj">14</div></div>
+                                        <div class="date inline news-date">August 26, 2013</div>
+                                        <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date news-number">14</div></div>
                                     
-                                    <div class="description"><p>For Obama MLK's shadow looms large ahead od speech</p></div>
+                                    <div class="description news-description"><p>For Obama MLK's shadow looms large ahead od speech</p></div>
                                 </div>
                                 <div class="col-md-4">
                                         <div><img class="img" src="img/Layer 57.png" alt=""></div>
                                         
-                                        <div class="date inline">August 26, 2014</div>
+                                        <div class="date inline news-date">August 26, 2014</div>
                                         <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj">22</div></div>
                                         
                                         <div class="description"><p>NASA releases portrait of a planet waving at Saturn</p></div>
@@ -150,7 +153,7 @@
                                     <div class="col-md-4">
                                         <div><img class="img" src="img/Layer 57.png" alt=""></div>
                                         
-                                        <div class="date inline">August 26, 2015</div>
+                                        <div class="date inline news-date">August 26, 2015</div>
                                         <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj">5</div></div>
                                         
                                         <div class="description"><p>Patriotsvv make cuts... and Tim Tebow survives (so far)</p></div>
@@ -164,7 +167,7 @@
                                     <div class="col-md-4">
                                             <div><img class="img" src="img/Layer 57.png" alt=""></div>
     
-                                        <div class="date inline">August 26, 2013</div>
+                                        <div class="date inline ">August 26, 2013</div>
                                         <div class="description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
                                     </div>
                                     <div class="col-md-4">
@@ -307,11 +310,10 @@
                                     </div>
                                 </div>  
                         </div>
-                    </div>
+                    
                     
                     <!--side content-->
-                <div class="col-md-4">
-                    <div class="side-content">
+                    <div class="side-content inline">
                         <div class="popular">
 
                             <div class="row topp">
@@ -445,7 +447,7 @@
                                         </div>
                                         <div class="col-md-10">
                                             <div class="inline envato-right">
-                                                <div class="title" >Envato</div>
+                                                <div class="title"> <a class="envato-word" >Envato</a> </div>
                                             
                                                 <div><button><img class="size" src="img/tick.png">Like</button>
                                                     You like this.
@@ -461,7 +463,7 @@
                                         </div>
                                         <div class="col-md-10">
                                             <div class="inline envato-right">
-                                                <div class="title" >Envato</div>
+                                                <div class="title"> <a class="envato-word" >Envato</a> </div>
                                                     <div>
                                                         <div>
                                                             <div >Is this your typical milion dollar day in the park?</div>
@@ -486,7 +488,7 @@
                                                     </div>
                                                     <div class="col-md-10">
                                                         <div class="inline envato-right">
-                                                            <div class="title" >Envato</div>
+                                                            <div class="title"> <a class="envato-word" >Envato</a> </div>
                                                                 <div>
                                                                    NEW BLOG POST: Going Solo-What it Take to Succeed on Your Own
                                                                    <a><span class="envato-word">#Startup #Septemper</span></a>
@@ -509,8 +511,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
             </div>
             <div class="banner banner-940x120">
@@ -522,10 +522,16 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/slider.js"></script>
+    
+    <!--<script src="js/main.min.js"></script>-->
+
+    <!--build:js js/main.min.js -->
+    <script src="js/apiCall.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/editorials.js"></script>
     <script src="js/local-news.js"></script>
     <script src="js/popular.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

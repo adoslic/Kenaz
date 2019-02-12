@@ -21,7 +21,7 @@ var local = [
         description: "Patriotsvv make cuts... and Tim Tebow survives (so far)"
     }
 ];
-br=0;
+var br=0;
 
 $(document).ready(function () {
 

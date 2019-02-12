@@ -59,25 +59,25 @@ $(document).ready(function () {
   
     var helper = $(`.middle-one-text-date`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].date);
     });
     helper = $(`.middle-one-text-description`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].description);
     });
     var helper = $(`.middle-one-text-number`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].number);
     });
     helper = $(`.middle-one-text-img`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).attr("src",popular[index].img);
     });
-})
+});
 
 
 $(".first").click(function() {
@@ -100,22 +100,22 @@ $(".first").click(function() {
 
     var helper = $(`.middle-one-text-date`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].date);
     });
     helper = $(`.middle-one-text-description`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].description);
     });
     var helper = $(`.middle-one-text-number`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].number);
     });
     helper = $(`.middle-one-text-img`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).attr("src",popular[index].img);
     });
 
@@ -142,22 +142,22 @@ $( ".second").click(function() {
 
     var helper = $(`.middle-one-text-date`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].date);
     });
     helper = $(`.middle-one-text-description`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].description);
     });
     var helper = $(`.middle-one-text-number`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].number);
     });
     helper = $(`.middle-one-text-img`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).attr("src",popular[index].img);
     });
 
@@ -183,22 +183,22 @@ $( ".third").click(function() {
     
     var helper = $(`.middle-one-text-date`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].date);
     });
     helper = $(`.middle-one-text-description`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].description);
     });
     var helper = $(`.middle-one-text-number`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).text(popular[index].number);
     });
     helper = $(`.middle-one-text-img`);
     helper.map((index, el) => {
-        console.log(el, index);
+        //console.log(el, index);
         $(el).attr("src",popular[index].img);
     });
 });

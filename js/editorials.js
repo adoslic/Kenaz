@@ -34,7 +34,7 @@ $(document).ready(function () {
 $("#left-Slide").click(function(){
     i-=1;
         if(i<0) i=editorials.length-1;
-        //alert(index);
+        //console.log(i);
         $("#GroupOne-image").attr("src",editorials[i].img);
         $("#GroupOne-date").text(editorials[i].date);
         $("#GroupOne-description").text(editorials[i].description);
