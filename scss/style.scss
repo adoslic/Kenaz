@@ -14,7 +14,14 @@ body{
   height: 50px;
   //border: solid 1px red;
   .img{
-    padding: 10px 15px;
+    //padding: 10px 15px;
+    //border: solid 1px red;
+    height: 50px;
+    width: 60px;
+    vertical-align: middle;
+    line-height: 25px;
+    text-align:center;
+    //padding-right: 15px;
     &:hover{
       background-color: #303030;
     }
@@ -37,7 +44,11 @@ body{
   top: 0;
   left: 0;
   .kenaz{
-  font-size: 20px;
+    font-size: 20px;
+    //border: solid 1px red;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 25px;
   }
 }
 .menu--right{
@@ -45,10 +56,15 @@ body{
   display: flex;
   align-items: center;
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 0;
   .media{
-      font-size: 16px;
+    font-size: 16px;
+    //border: solid 1px red;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 25px;
+    //margin: 0;
     }
 }
 
@@ -73,27 +89,42 @@ body{
     //border: solid 1px red;
     display: inline-block;
     padding: 10px 22px;
+    //margin-right: 0;
   }
 }
 .menu2--blue{
-  background-color: #299EC3;
+  height: 50px;
+  //background-color: #299EC3;
   border-bottom: #299EC3 solid 4px;
+  cursor: pointer;
+  //border-top: #299EC3 solid 2px;
   //border: solid 1px red;
 }
 .menu2--orange{
+  height: 50px;
   border-bottom: #EE6151 solid 4px;
+  cursor: pointer;
+  //border-top: #EE6151 solid 2px;
 }
 .menu2--green{
+  height: 50px;
   border-bottom: #84C14F solid 4px;
+  cursor: pointer;
 }
 .menu2--lightblue{
+  height: 50px;
   border-bottom: #5DCFF3 solid 4px;
+  cursor: pointer;
 }
 .menu2--yellow{
+  height: 50px;
   border-bottom: #FCC44D solid 4px;
+  cursor: pointer;
 }
 .menu2--gray{
+  height: 50px;
   border-bottom:#A99765 solid 4px;
+  cursor: pointer;
 }
 
 #containter{

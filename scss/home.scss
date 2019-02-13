@@ -2,34 +2,54 @@
     width: 940px;
     margin: auto;
     
-
     .main-content{
         width: 620px;
         margin-right: 20px;
         display: inline-block;
         //border: solid 1px red;
-    }
-    
+    }    
+}
+.bla2{
+    //max-height: 150px;
+    //border: solid 1px red;
 }
 .category{
     width: 620px;
     margin-bottom: 20px;
     padding: 20px 30px;
+    
     //padding: 20px;
     background-color: #FFFFFF;
     //border-left: solid 10px #3677B5;
+    .newsImageContainer{
+        border: solid red 1px;
+        width: 150px;
+        height: 150px;
+        //object-fit: cover;
+        //object-fit: none;
+        //width: 100%;
+        //height: 0px;
+    }
+    .news-img, .sport-img{
+        //max-height: 150px;
+    }
     .titleOfArticle{
-        margin-bottom: 10px;
+        //border: solid red 1px;
+        margin-bottom: 10px; 
     }
     .img{
         width: 100%;
-        margin-bottom: 5px;
+
+        //border: solid 1px red;
+        //margin-bottom: 5px;
         //margin: 0;
     }
     .date {
     //margin-top: 5px;
+    //max-height: 150px;
+    //border: solid 1px red;
     color: #797979;
-    font-size: 12px;
+    font-size: 11px;
     //float: left;
     margin-bottom: 5px;
     }
@@ -58,8 +78,12 @@
     .description{
         clear: both;
         //border: solid 1px red;
-        //margin-top: 20px;
+        //margin-bottom: 10px;
         font-size: 12px;
+        max-height: 90px;
+        margin-right: 10px;
+        //white-space: nowrap;
+        overflow: hidden;
     }
 }
 .news{
@@ -77,6 +101,7 @@
     .img{
         width: 120px;
         margin-bottom: 30px;
+        margin-top: 5px;
         
     }
     .description{
@@ -87,6 +112,12 @@
     border-left: solid 10px #FCC44D;
     .imgSpace{
         margin-left: 15px;
+    }
+    .img{
+        max-width: 250px;
+    }
+    .description{
+        margin-bottom: 20px;
     }
     .hover{
         width: 30px;
@@ -174,4 +205,8 @@
 .local-news
 {
     margin-left: 2%;
+}
+#padding{
+    padding: 0 10px 10px 5px;
+    //border: solid red 1px;
 }

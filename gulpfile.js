@@ -16,17 +16,18 @@ var babel = require('gulp-babel');
 gulp.task('sass', function() {
   return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
-gulp.task('watch', ['browserSync', 'sass','build'], function (){
-  gulp.watch('scss/**/*.scss', ['sass']); 
+
+gulp.task('watch', ['build'], function (){
+  gulp.watch('scss/**/*.scss', ['sass','useref']).on('change', browserSync.reload); 
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('*.html', browserSync.reload); 
-  gulp.watch('js/**/*.js', browserSync.reload); 
+  gulp.watch('*.html', ['useref']).on('change', browserSync.reload); 
+  gulp.watch('js/**/*.js', ['useref']).on('change', browserSync.reload);
 });
 
 gulp.task('browserSync', function() {
@@ -49,6 +50,7 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'))
 });
 
+
 gulp.task('images', function(){
   return gulp.src('img/**/*.+(png|jpg|jpeg|gif|svg)')
   // Caching images that ran through imagemin
@@ -69,14 +71,10 @@ gulp.task('clean:dist', function() {
 
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'images', 'fonts'],
+  runSequence('clean:dist', 'sass',
+      ['useref', 'images', 'fonts'],'browserSync',
     callback
   )
 });
 
-gulp.task('default', function (callback) {
-  runSequence(['sass','browserSync', 'watch'],
-    callback
-  )
-});
+gulp.task('default', ['watch']);

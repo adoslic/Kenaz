@@ -1,5 +1,5 @@
 
-var carousel = [
+/*var carousel = [
     {
         img:"img/img1.jpg", 
         date:"August 26, 2013", 
@@ -33,28 +33,23 @@ var carousel = [
         description2: "Patriotsvv make cuts... and Tim Tebow survives (so far)"
     }
 ];
-var index=0;
+var index=0;*/
 
 
-$(document).ready(function () {
-    //console.log( $("#firstGroup-date"));
+/*    //console.log( $("#firstGroup-date"));
 
-    /*$("#firstGroup-image").attr("src",carousel[index].img);
-    $("#firstGroup-date").text(carousel[index].date);
-    $("#firstGroup-description").text(carousel[index].description);
-    $("#secondGroup-image").attr("src",carousel[index].img2);
-    $("#secondGroup-date").text(carousel[index].date2);
-    $("#secondGroup-description").text(carousel[index].description2);*/
-
-    //$("#firstGroup-image").attr("src",result.articles[0].urlToImage);
-    //console.log(A.articles[0].author);
-    //$('#left-slide').click(next(1));
+        $("#firstGroup-image").attr("src",carousel[index].img);
+        $("#firstGroup-date").text(carousel[index].date);
+        $("#firstGroup-description").text(carousel[index].description);
+        $("#secondGroup-image").attr("src",carousel[index].img2);
+        $("#secondGroup-date").text(carousel[index].date2);
+        $("#secondGroup-description").text(carousel[index].description2);
 
     
-})
-
+//})*/
+ /*
 $("#left-slide").click(function(){
-        index-=1;
+       index-=1;
         if(index<0) index=carousel.length-1;
         //alert(index);
         $("#firstGroup-image").attr("src",carousel[index].img);
@@ -77,3 +72,4 @@ $("#left-slide").click(function(){
         $("#secondGroup-date").text(carousel[index].date2);
         $("#secondGroup-description").text(carousel[index].description2);
     });
+*/
