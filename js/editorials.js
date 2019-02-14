@@ -1,4 +1,4 @@
-
+/*
 var editorials = [
     {
         img:"img/img1.jpg", 
@@ -49,3 +49,4 @@ $("#right-Slide").click(function(){
         $("#GroupOne-date").text(editorials[i].date);
         $("#GroupOne-description").text(editorials[i].description);
 });
+*/

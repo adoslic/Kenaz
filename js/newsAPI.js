@@ -5,7 +5,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             //console.log(result.articles[0].publishedAt);
 
             //$(".news-date").text(result.articles[0].publishedAt);
@@ -22,7 +22,13 @@ $(document).ready(function(){
             news = $(`.news-img`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).attr("src",result.articles[index].urlToImage);
+                //console.log(result.articles[index].urlToImage);
+                $(el).css({
+                    "background-image": `url(${result.articles[index].urlToImage})`,
+                    "background-position": "center",
+                    "background-size": "cover",
+                    "background-repeat": "no-repeat"
+                });
             });
 
         },

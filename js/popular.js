@@ -1,4 +1,4 @@
-var popular = [
+/*var popular = [
     {
         img:"img/70x70.jpg", 
         date:"August 26, 2013", 
@@ -35,7 +35,7 @@ var popular = [
         description: "For Obama, MLK's shadow looms large ahead od speech",
         number:"15"
     }
-];
+];*/
 
 
 

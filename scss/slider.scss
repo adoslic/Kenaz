@@ -2,54 +2,73 @@
     //border: solid red 1px;
     width: 940px;
     height: 425px;
-    position: relative;  
+    //position: relative;  
     margin: auto;  
     margin-bottom: 20px;
-}  
-.left-arrow, .right-arrow {  
-    cursor: pointer;  
-    position: absolute;  
-    top: 40%;
-    width: auto;
-    margin: 10px;  
-    padding: 5px 10px;
-    //border: solid red 1px;
-    //margin-top: 40px; 
-} 
-.right-arrow { 
-    right: 0;  
-    border-radius: 3px 0 0 3px;  
+
+    .newsImageContainer{
+        //border: solid red 1px;
+        width: 940px;
+        height: 425px;
+        position: relative; 
+        //margin-top: 5px;
+    }
+    
+        .left-arrow-main-slider, .right-arrow-main-slider {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 40%;
+            width: auto;
+            margin: 10px;  
+            padding: 5px 10px;
+            //border: solid red 1px;
+            //margin-top: 40px; 
+        } 
+        .right-arrow-main-slider { 
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }
+        .left-arrow-main-slider:hover, .right-arrow-main-slider:hover {  
+            background-color: rgba(115, 115, 115, 0.8);  
+        }  
+
+
+        .sliderText { 
+            width: 87%;
+            background-color: rgba(164,164,164, 0.3);
+            //margin-left: 200px;
+            //border: solid red 1px;
+            color: white;  
+            //font-size: 30px;  
+            padding: 10px 20px; 
+            margin: 0 15px; 
+            position: absolute;  
+            top: 50%;
+            left: 5%;  
+            //width: 100%;
+            .slider-date, .slider-comments{
+                margin-right: 10px;
+                display: inline-block;
+                font-size: 16px;
+            }
+            .slider-description{
+                font-size: 30px;
+                margin-bottom: 30px;
+                max-height: 100px;
+                overflow: hidden;
+                //border: solid red 1px;
+            }
+            .slider-button{
+                border: solid white 1px;
+                width: 130px;
+                font-size: 18px;
+                padding: 5px 15px;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }  
+    
 }
-.left-arrow:hover, .right-arrow:hover {  
-    background-color: rgba(115, 115, 115, 0.8);  
-}  
-
-
-.sliderText { 
-    color: white;  
-    //font-size: 30px;  
-    padding: 8px 20px; 
-    margin: 0 15px; 
-    position: absolute;  
-    top: 55%;  
-    //width: 100%;
-    .sliderText--one, .sliderText--two{
-        margin-right: 10px;
-        display: inline-block;
-        font-size: 16px;
-    }
-    .sliderText--three{
-        font-size: 30px;
-        margin-bottom: 40px,
-    }
-    .sliderText--button{
-        border: solid white 1px;
-        width: 130px;
-        font-size: 18px;
-        padding: 5px 15px;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-}  

@@ -1,4 +1,4 @@
-var slider = [
+/*var slider = [
     {
         img:"img/Layer 48.png", 
         number:"5 Comments", 
@@ -17,8 +17,8 @@ var slider = [
         date:"August 26, 2013", 
         description: "For Obama, MLK's shadow looms large ahead od speech"
     }
-];
-var slide_index = 0;  
+];*/
+/*var slide_index = 0;  
 
 $(document).ready(function () {
     
@@ -46,4 +46,4 @@ $(".right-arrow").click(function(){
     $(".sliderText--one").text(slider[slide_index].date);
     $(".sliderText--two").text(slider[slide_index].number);
     $(".sliderText--three").text(slider[slide_index].description);
-});
+});*/

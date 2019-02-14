@@ -48,37 +48,25 @@
                 <img src="img/940x120.png" alt="">
             </div>
             <!-- slider --> 
-            <div class="slidercontainer"> 
-                    <div class="showSlide slider--one">  
-                        <img class="slider-first-image" src="img/slider1.jpg" /> 
-                    </div>  
+            <div class="slidercontainer">
+                <div class="newsImageContainer slider-img">  
                     
                     <!-- Navigation arrows -->  
-                    <div class="left-arrow">
-                        <a><img src="img/12.png" alt=""></a>  
-                    </div>
-                    <div class="right-arrow">
-                        <a><img src="img/123.png" alt=""></a>
-                    </div>
+                    <div class="left-arrow-main-slider"><img src="img/12.png" alt=""></div>
+                    <div class="right-arrow-main-slider"><img src="img/123.png" alt=""></div>
+                    
                     <!-- Tekst na sliderima -->  
-                    <div class="sliderTextContainer">
-                        <div class="sliderText sliderText-one">
-                            <div class="inline sliderText--one">
-                                August 23, 2013
+                    <div class="sliderText">
+                            <div class="inline slider-date"></div>
+                            <div class="inline slider-comments">
+                                <img src="img/comment1.png" alt=""> 22 Comments
                             </div>
-                            <div class="inline sliderText--two">
-                                <img src="img/comment1.png" alt="">
-                                22 Comments
-                            </div>
-                            <div class="sliderText--three">
-                                'Margot' breathlessly reimagines Anne Frank's sister
-                            </div>
-                            <div class="sliderText--four">
-                                <a href=""><div class="sliderText--button">Read article</div></a>
-                            </div>
-                        </div>
+                            <div class="slider-description"></div>
+                            <div class="slider-button">Read article</div>
                     </div>
-            </div> 
+                </div>
+            </div>
+            
 
             <!-- glavni dio --> 
             <div class="content">
@@ -88,24 +76,24 @@
                             <div class="titleOfArticle inline"><h4>News</h4></div>
                             <div class="inline see-all"><a href="">See all</a></div>
                             <div class="row">
-                                <div class="col-md-4">
-                                        <div><img class="img news-img" src="img/Layer 57.png" alt=""></div>
+                                <div class="col-md-4 article">
+                                    <div class="newsImageContainer news-img"></div>
                                 
                                         <div class="date inline news-date"></div>
                                         <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj news-number">14</div></div>
                                     
                                     <div class="description news-description"></div>
                                 </div>
-                                <div class="col-md-4">
-                                        <div><img class="img news-img" src="img/Layer 57.png" alt=""></div>
+                                <div class="col-md-4 article">
+                                    <div class="newsImageContainer news-img"></div>
                                         
                                         <div class="date inline news-date"></div>
                                         <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj">22</div></div>
                                         
                                         <div class="description news-description"></div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div><img class="img news-img" src="img/Layer 57.png" alt=""></div>
+                                    <div class="col-md-4 article">
+                                        <div class="newsImageContainer news-img"></div>
                                         
                                         <div class="date inline news-date"></div>
                                         <div class="imgRight inline"><img src="img/comment.png" alt=""><div class="imgRight date broj">5</div></div>
@@ -118,19 +106,19 @@
                                 <div class="titleOfArticle inline"><h4>Sport</h4></div>
                                 <div class="inline see-all"><a href="">See all</a></div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4  article">
                                             <div class="newsImageContainer sport-img"></div>
     
                                         <div class="date inline sport-date"></div>
                                         <div class="description sport-description"></div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4  article">
                                             <div class="newsImageContainer sport-img"></div>
                                             
                                             <div class="date inline sport-date"></div>
                                             <div class="description sport-description"></div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 article">
                                                 <div class="newsImageContainer sport-img"></div>
                                             
                                             <div class="date inline sport-date"></div>
@@ -146,10 +134,10 @@
                                 <div class="titleOfArticle inline"><h4>Business</h4></div>
                                 <div class="inline see-all"><a href="">See all</a></div>
                                 <div class="row">
-                                        <div class="col-md-6" id="padding">
+                                        <div class="col-md-6  article" id="padding">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div ><img class="img business-img" src="" alt=""></div>
+                                                    <div class="newsImageContainer business-img"></div>
                                             </div>
                                             <div class="col-md-6" id="test">
                                                                             
@@ -160,10 +148,10 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="col-md-6" id="padding">
+                                        <div class="col-md-6 article" id="padding">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div ><img class="img business-img" src="" alt=""></div>
+                                                    <div class="newsImageContainer business-img"></div>
                                             </div>
                                             <div class="col-md-6" id="test">
                                                                             
@@ -176,24 +164,24 @@
                                         </div>
                                 </div>
                                 <div class="row">
-                                        <div class="col-md-6 bla2" id="padding">
+                                        <div class="col-md-6 article" id="padding">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div ><img class="img business-img" src="" alt=""></div>
-                                            </div>
-                                            <div class="col-md-6" id="test">
+                                                    <div class="newsImageContainer business-img"></div>
+                                                </div>
+                                                <div class="col-md-6" id="test">
                                                                             
                                                 <div class="date inline business-date"></div>
                                                 <div class="description business-description"></div>
                                                         
-                                            </div>
+                                                </div>
                                             </div>
                                             
                                         </div>
-                                        <div class="col-md-6" id="padding">
+                                        <div class="col-md-6  article" id="padding">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div ><img class="img business-img" src="" alt=""></div>
+                                                    <div class="newsImageContainer business-img"></div>
                                             </div>
                                             <div class="col-md-6" id="test">
                                                                             
@@ -213,86 +201,97 @@
                         <div class="category new-carousel">
                                 <div class="titleOfArticle inline"><h4>New Carousel</h4></div>
                                 <div class="inline see-all">
-                                    <div class="imgRight inline imgSpace hover arrow-right" id="right-slide"></div>
-                                    <div class="imgRight inline hover arrow-left" id="left-slide"></div>
+                                    <div class="imgRight inline imgSpace hover arrow-right right-slide-carousel"></div>
+                                    <div class="imgRight inline hover arrow-left left-slide-carousel"></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6 firstgroup">
-                                        <div class="firstGroup"><img class="img new-carousel-img" src="img/Layer 57.png" alt=""></div>
+                                    <div class="col-md-6 article">
+                                        <div class="newsImageContainer new-carousel-img"></div>
     
-                                        <div class="date firstGroup inline new-carousel-date">August 26, 2013</div>
-                                        <div class="description firstGroup new-carousel-description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        <div class="date firstGroup inline new-carousel-date"></div>
+                                        <div class="description firstGroup new-carousel-description"></div>
                                     </div>
-                                    <div class="col-md-6 secondGroup">
-                                        <div class="secondGroup"><img class="img new-carousel-img" src="img/Layer 57.png" alt=""></div>
+                                    <div class="col-md-6 article">
+                                        <div class="newsImageContainer new-carousel-img"></div>
     
-                                        <div class="date secondGroup inline new-carousel-date">August 26, 2013</div>
-                                        <div class="description secondGroup new-carousel-description"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        <div class="date secondGroup inline new-carousel-date"></div>
+                                        <div class="description secondGroup new-carousel-description"></div>
                                     </div>
                                 </div>  
                         </div>
+                    
                         
                         <div class="category editorials inline">
                                 <div class="titleOfArticle inline"><h4>Editorials</h4></div>
                                 <div class="inline see-all">
-                                    <div class="imgRight inline imgSpace hover arrow-right" id="right-Slide"></div>
-                                    <div class="imgRight inline hover arrow-left" id="left-Slide"></div>
+                                    <div class="imgRight inline imgSpace hover arrow-right right-slide-editorials"></div>
+                                    <div class="imgRight inline hover arrow-left left-slide-editorials"></div>
                                 </div>
                                 
-                                    <div class="firstgroup">
-                                        <div class="firstGroup"><img id="GroupOne-image" class="img" src="img/Layer 57.png" alt=""></div>
+                                    <div class="article">
+                                        <div class="newsImageContainer editorials-img"></div>
     
-                                        <div id="GroupOne-date" class="date firstGroup inline">August 26, 2013</div>
-                                        <div id="GroupOne-description" class="description firstGroup"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        <div class="date firstGroup inline editorials-date"></div>
+                                        <div class="description firstGroup editorials-description"></div>
                                     </div>
                                 </div>    
                         
 
 
-                        <div class="category local-news inline">
+                            <div class="category local-news inline">
                                 <div class="titleOfArticle inline"><h4>Local news</h4></div>
                                 <div class="inline see-all">
-                                    <div class="imgRight inline imgSpace hover arrow-right" id="Right-Slide"></div>
-                                    <div class="imgRight inline hover arrow-left" id="Left-Slide"></div>
+                                    <div class="imgRight inline imgSpace hover arrow-right right-slide-local"></div>
+                                    <div class="imgRight inline hover arrow-left left-slide-local"></div>
                                 </div>
                                 
-                                    <div class="firstgroup">
-                                        <div class="firstGroup"><img id="GroupTwo-image" class="img" src="img/Layer 57.png" alt=""></div>
+                                    <div class="article">
+                                        <div class="newsImageContainer local-img"></div>
     
-                                        <div id="GroupTwo-date" class="date firstGroup inline">August 26, 2013</div>
-                                        <div id="GroupTwo-description" class="description firstGroup"><p>For Obama, MLK's shadow looms large ahead od speech</p></div>
+                                        <div class="date firstGroup inline local-date"></div>
+                                        <div class="description firstGroup local-description"></div>
                                     </div>
-                                </div>  
-                        </div>
-                    
+                            </div>  
+                        
+                    </div>
                     
                     <!--side content-->
                     <div class="side-content inline">
                         <div class="popular">
 
-                            <div class="row topp">
-                                <div class="col-md-4 top bla first">
-                                    <a class="first-link no-active bla">Popular</a>
+                            <div class="row top">
+                                <div class="col-md-4">
+                                    <a class="first-link no-active">Popular</a>
                                 </div>
-                                <div class="col-md-4 top bla second">
-                                    <a class="second-link no-active bla">Top rated</a>
+                                <div class="col-md-4">
+                                    <a class="second-link no-active">Top rated</a>
                                 </div>
-                                <div class="col-md-4 top bla third">
-                                    <a class="third-link no-active bla">Comments</a>
+                                <div class="col-md-4">
+                                    <a class="third-link no-active">Comments</a>
                                 </div>
                                 
                             </div>
                             <div class="middle">
                                     <div class="padding">
+                                        <div class="row">
+                                            <div class="col-md-8 middle-one-text">
+                                                <div class="middle-one-text-date inline">August 26, 2013</div>
+                                                <div class="imgRight inline middle-one-text-number">5</div><div class="imgRight inline comment-size"></div>
+                                                <div class="middle-one-text-description"><p>Palestinians call off peace talks after crash</p></div>
+                                            </div>
+                                            <div id="test" class="col-md-4 inline newsImageContainer middle-one-text-img"></div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="middle">
+                                    <div class="padding">
                                     <div class="row">
                                         <div class="col-md-8 middle-one-text">
-                                            <div class="middle-one-text-date inline bla">August 26, 2013</div>
-                                            <div class="imgRight inline bla"><img src="img/comment.png" alt=""><div class="imgRight broj middle-one-text-number">5</div></div>
-                                            <div class="middle-one-text-description bla"><p>Palestinians call off peace talks after crash</p></div>
+                                            <div class="middle-one-text-date inline">August 26, 2013</div>
+                                            <div class="imgRight inline middle-one-text-number">5</div><div class="imgRight inline comment-size"></div>
+                                            <div class="middle-one-text-description"><p>Palestinians call off peace talks after crash</p></div>
                                         </div>
-                                        <div id="test" class="col-md-4 inline bla">
-                                            <img class="middle-one-img imgSize bla" src="img/70x70.jpg" alt="">
-                                        </div>
+                                        <div id="test" class="col-md-4 inline newsImageContainer middle-one-text-img"></div>
                                     </div>
                                     </div>
                             </div>
@@ -300,13 +299,11 @@
                                     <div class="padding">
                                     <div class="row">
                                         <div class="col-md-8 middle-one-text">
-                                            <div class="middle-one-text-date inline bla">August 26, 2013</div>
-                                            <div class="imgRight inline bla"><img src="img/comment.png" alt=""><div class="imgRight broj middle-one-text-number">5</div></div>
-                                            <div class="middle-one-text-description bla"><p>Palestinians call off peace talks after crash</p></div>
+                                            <div class="middle-one-text-date inline">August 26, 2013</div>
+                                            <div class="imgRight inline middle-one-text-number">5</div><div class="imgRight inline comment-size"></div>
+                                            <div class="middle-one-text-description"><p>Palestinians call off peace talks after crash</p></div>
                                         </div>
-                                        <div id="test" class="col-md-4 inline bla">
-                                            <img class="middle-one-img imgSize bla" src="img/70x70.jpg" alt="">
-                                        </div>
+                                        <div id="test" class="col-md-4 inline newsImageContainer middle-one-text-img"></div>
                                     </div>
                                     </div>
                             </div>
@@ -314,13 +311,11 @@
                                     <div class="padding">
                                     <div class="row">
                                         <div class="col-md-8 middle-one-text">
-                                            <div class="middle-one-text-date inline bla">August 26, 2013</div>
-                                            <div class="imgRight inline bla"><img src="img/comment.png" alt=""><div class="imgRight broj middle-one-text-number">5</div></div>
-                                            <div class="middle-one-text-description bla"><p>Palestinians call off peace talks after crash</p></div>
+                                            <div class="middle-one-text-date inline">August 26, 2013</div>
+                                            <div class="imgRight inline middle-one-text-number">5</div><div class="imgRight inline comment-size"></div>
+                                            <div class="middle-one-text-description"><p>Palestinians call off peace talks after crash</p></div>
                                         </div>
-                                        <div id="test" class="col-md-4 inline bla">
-                                            <img class="middle-one-img imgSize bla" src="img/70x70.jpg" alt="">
-                                        </div>
+                                        <div id="test" class="col-md-4 inline newsImageContainer middle-one-text-img"></div>
                                     </div>
                                     </div>
                             </div>
@@ -328,36 +323,18 @@
                                     <div class="padding">
                                     <div class="row">
                                         <div class="col-md-8 middle-one-text">
-                                            <div class="middle-one-text-date inline bla">August 26, 2013</div>
-                                            <div class="imgRight inline bla"><img src="img/comment.png" alt=""><div class="imgRight broj middle-one-text-number">5</div></div>
-                                            <div class="middle-one-text-description bla"><p>Palestinians call off peace talks after crash</p></div>
+                                            <div class="middle-one-text-date inline">August 26, 2013</div>
+                                            <div class="imgRight inline middle-one-text-number">5</div><div class="imgRight inline comment-size"></div>
+                                            <div class="middle-one-text-description"><p>Palestinians call off peace talks after crash</p></div>
                                         </div>
-                                        <div id="test" class="col-md-4 inline bla">
-                                            <img class="middle-one-img imgSize bla" src="img/70x70.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    </div>
-                            </div>
-                            <div class="middle">
-                                    <div class="padding">
-                                    <div class="row">
-                                        <div class="col-md-8 middle-one-text">
-                                            <div class="middle-one-text-date inline bla">August 26, 2013</div>
-                                            <div class="imgRight inline bla"><img src="img/comment.png" alt=""><div class="imgRight broj middle-one-text-number">5</div></div>
-                                            <div class="middle-one-text-description bla"><p>Palestinians call off peace talks after crash</p></div>
-                                        </div>
-                                        <div id="test" class="col-md-4 inline bla">
-                                            <img class="middle-one-img imgSize bla" src="img/70x70.jpg" alt="">
-                                        </div>
+                                        <div id="test" class="col-md-4 inline newsImageContainer middle-one-text-img"></div>
                                     </div>
                                     </div>
                             </div>
                             
                             
-                            <div class="bottom">
-                                    
-                            </div>
-                            </div>
+                            <div class="bottom"></div>
+                        </div>
                         
 
                         <div class="social">
@@ -471,9 +448,7 @@
                 <img src="img/940x120.png" alt="">
             </div>
         </div>
-        </div>
-        </div>
-        </div>
+        
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     

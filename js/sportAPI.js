@@ -5,7 +5,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.sport-date`);
             news.map((index, el) => {
@@ -20,20 +20,13 @@ $(document).ready(function(){
             news = $(`.sport-img`);
             news.map((index, el) => {
                 //console.log(el, index);
-                console.log(result.articles[index].urlToImage);
+                //console.log(result.articles[index].urlToImage);
                 $(el).css({
-                    "background:": url(result.articles[index].urlToImage),
+                    "background-image": `url(${result.articles[index].urlToImage})`,
                     "background-position": "center",
                     "background-size": "contain",
                     "background-repeat": "no-repeat"
                 });
-
-                //css("background", url(result.articles[index].urlToImage));
-
-                //background: url("../img/Shape-11.png");
-                //background-position: center;
-                //background-size: contain;
-                //background-repeat: no-repeat;
             });
 
         },

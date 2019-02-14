@@ -1,43 +1,48 @@
 .slidercontainer {
   width: 940px;
   height: 425px;
-  position: relative;
   margin: auto;
   margin-bottom: 20px; }
-
-.left-arrow, .right-arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  margin: 10px;
-  padding: 5px 10px; }
-
-.right-arrow {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-.left-arrow:hover, .right-arrow:hover {
-  background-color: rgba(115, 115, 115, 0.8); }
-
-.sliderText {
-  color: white;
-  padding: 8px 20px;
-  margin: 0 15px;
-  position: absolute;
-  top: 55%; }
-  .sliderText .sliderText--one, .sliderText .sliderText--two {
-    margin-right: 10px;
-    display: inline-block;
-    font-size: 16px; }
-  .sliderText .sliderText--three {
-    font-size: 30px;
-    margin-bottom: 40px; }
-  .sliderText .sliderText--button {
-    border: solid white 1px;
-    width: 130px;
-    font-size: 18px;
-    padding: 5px 15px; }
-  .sliderText a {
-    text-decoration: none;
-    color: white; }
+  .slidercontainer .newsImageContainer {
+    width: 940px;
+    height: 425px;
+    position: relative; }
+  .slidercontainer .left-arrow-main-slider, .slidercontainer .right-arrow-main-slider {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin: 10px;
+    padding: 5px 10px; }
+  .slidercontainer .right-arrow-main-slider {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .slidercontainer .left-arrow-main-slider:hover, .slidercontainer .right-arrow-main-slider:hover {
+    background-color: rgba(115, 115, 115, 0.8); }
+  .slidercontainer .sliderText {
+    width: 87%;
+    background-color: rgba(164, 164, 164, 0.3);
+    color: white;
+    padding: 10px 20px;
+    margin: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 5%; }
+    .slidercontainer .sliderText .slider-date, .slidercontainer .sliderText .slider-comments {
+      margin-right: 10px;
+      display: inline-block;
+      font-size: 16px; }
+    .slidercontainer .sliderText .slider-description {
+      font-size: 30px;
+      margin-bottom: 30px;
+      max-height: 100px;
+      overflow: hidden; }
+    .slidercontainer .sliderText .slider-button {
+      border: solid white 1px;
+      width: 130px;
+      font-size: 18px;
+      padding: 5px 15px;
+      cursor: pointer; }
+    .slidercontainer .sliderText a {
+      text-decoration: none;
+      color: white; }

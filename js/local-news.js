@@ -1,4 +1,4 @@
-
+/*
 var local = [
     {
         img:"img/img1.jpg", 
@@ -50,4 +50,4 @@ $("#Right-Slide").click(function(){
         $("#GroupTwo-date").text(local[br].date);
         $("#GroupTwo-description").text(local[br].description);
         //alert(index);
-});
+});*/

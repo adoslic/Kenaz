@@ -8,13 +8,16 @@
 
 .category {
   width: 620px;
+  max-height: 350px;
   margin-bottom: 20px;
-  padding: 20px 30px;
+  padding: 30px 30px;
   background-color: #FFFFFF; }
+  .category .article {
+    cursor: pointer;
+    width: 100%; }
   .category .newsImageContainer {
-    border: solid red 1px;
-    width: 150px;
-    height: 150px; }
+    width: 160px;
+    height: 90px; }
   .category .titleOfArticle {
     margin-bottom: 10px; }
   .category .img {
@@ -35,7 +38,7 @@
   .category .description {
     clear: both;
     font-size: 12px;
-    max-height: 90px;
+    max-height: 70px;
     margin-right: 10px;
     overflow: hidden; }
 
@@ -47,21 +50,26 @@
 
 .business {
   border-left: solid 10px #EE6151; }
-  .business .img {
+  .business .titleOfArticle {
+    margin-bottom: 0; }
+  .business .newsImageContainer {
     width: 120px;
-    margin-bottom: 30px;
-    margin-top: 5px; }
+    height: 70px;
+    margin-top: 10px; }
   .business .description {
-    color: #797979; }
+    color: #797979;
+    max-height: 55px; }
 
 .new-carousel {
   border-left: solid 10px #FCC44D; }
   .new-carousel .imgSpace {
     margin-left: 15px; }
-  .new-carousel .img {
-    max-width: 250px; }
+  .new-carousel .newsImageContainer {
+    width: 250px;
+    height: 150px;
+    margin-top: 5px; }
   .new-carousel .description {
-    margin-bottom: 20px; }
+    max-height: 20px; }
   .new-carousel .hover {
     width: 30px;
     height: 30px;
@@ -89,9 +97,14 @@
 
 .editorials, .local-news {
   border-left: solid 10px #A99765;
-  width: 48%;
-  float: left;
-  margin-bottom: 0; }
+  width: 290px;
+  float: left; }
+  .editorials .newsImageContainer, .local-news .newsImageContainer {
+    width: 230px;
+    height: 150px;
+    margin-top: 5px; }
+  .editorials .description, .local-news .description {
+    max-height: 20px; }
   .editorials .imgSpace, .local-news .imgSpace {
     margin-left: 15px; }
   .editorials .hover, .local-news .hover {
@@ -122,10 +135,10 @@
     clear: both; }
 
 .editorials {
-  margin-right: 2%; }
+  margin-right: 20px; }
 
 .local-news {
-  margin-left: 2%; }
+  margin-left: 20px; }
 
 #padding {
   padding: 0 10px 10px 5px; }
