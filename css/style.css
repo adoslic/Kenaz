@@ -110,3 +110,8 @@ body {
     width: 940px; }
   #containter .banner-620x120 {
     width: 100%; }
+
+.footer {
+  background-color: #252525;
+  width: 100%;
+  height: 100px; }
