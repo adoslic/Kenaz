@@ -39,7 +39,7 @@
 
 
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
     if($(".first-link").hasClass("active")){
         $(".first-link").removeClass('active');
@@ -203,3 +203,4 @@ $( ".third").click(function() {
     });
 });
 
+*/

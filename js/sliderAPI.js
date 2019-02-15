@@ -68,7 +68,7 @@ $(".left-arrow-main-slider").click(function(){
                     "background-repeat": "no-repeat"
                 });
             });
-            console.log(ind);
+            //console.log(ind);
         },
         error: function(error){
             console.log(`Erorr ${error}`);

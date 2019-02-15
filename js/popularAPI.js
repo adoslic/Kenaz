@@ -22,7 +22,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.middle-one-text-date`);
             news.map((index, el) => {
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 $(el).css({
                     "background-image": `url(${result.articles[index].urlToImage})`,
                     "background-position": "center",
-                    "background-size": "100% 100%",
+                    "background-size": "cover",
                     "background-repeat": "no-repeat"
                 });
             });
@@ -76,7 +76,7 @@ $(".first-link").click(function(){
             url: url,
             type: "GET",
             success: function(result){
-                console.log(result);
+                //console.log(result);
                 
                 var news = $(`.middle-one-text-date`);
                 news.map((index, el) => {
@@ -95,7 +95,7 @@ $(".first-link").click(function(){
                     $(el).css({
                         "background-image": `url(${result.articles[index].urlToImage})`,
                         "background-position": "center",
-                        "background-size": "100% 100%",
+                        "background-size": "cover",
                         "background-repeat": "no-repeat"
                     });
                 });
@@ -131,7 +131,7 @@ $(".second-link").click(function(){
             url: url,
             type: "GET",
             success: function(result){
-                console.log(result);
+                //console.log(result);
                 
                 var news = $(`.middle-one-text-date`);
                 news.map((index, el) => {
@@ -150,7 +150,7 @@ $(".second-link").click(function(){
                     $(el).css({
                         "background-image": `url(${result.articles[index].urlToImage})`,
                         "background-position": "center",
-                        "background-size": "100% 100%",
+                        "background-size": "cover",
                         "background-repeat": "no-repeat"
                     });
                 });
@@ -185,7 +185,7 @@ $(".third-link").click(function(){
                 url: url,
                 type: "GET",
                 success: function(result){
-                    console.log(result);
+                    //console.log(result);
                     
                     var news = $(`.middle-one-text-date`);
                     news.map((index, el) => {
@@ -204,7 +204,7 @@ $(".third-link").click(function(){
                         $(el).css({
                             "background-image": `url(${result.articles[index].urlToImage})`,
                             "background-position": "center",
-                            "background-size": "100% 100%",
+                            "background-size": "cover",
                             "background-repeat": "no-repeat"
                         });
                     });

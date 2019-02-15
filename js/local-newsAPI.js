@@ -43,7 +43,7 @@ $(".left-slide-local").click(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
 
             localIndex-=1;
             if(localIndex<0) localIndex=result.articles.length-1;
@@ -68,7 +68,7 @@ $(".left-slide-local").click(function(){
                     "background-repeat": "no-repeat"
                 });
             });
-            console.log(ind);
+            //console.log(ind);
         },
         error: function(error){
             console.log(`Erorr ${error}`);

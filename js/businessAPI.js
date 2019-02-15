@@ -26,7 +26,7 @@ $(document).ready(function(){
                 $(el).css({
                     "background-image": `url(${result.articles[index].urlToImage})`,
                     "background-position": "center",
-                    "background-size": "contain",
+                    "background-size": "cover",
                     "background-repeat": "no-repeat"
                 });
             });

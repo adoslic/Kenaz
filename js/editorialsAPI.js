@@ -5,7 +5,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.editorials-date`);
             news.map((index, el) => {
@@ -43,7 +43,7 @@ $(".left-slide-editorials").click(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
 
             editorialsIndex-=1;
             if(editorialsIndex<0) editorialsIndex=result.articles.length-1;
@@ -68,7 +68,7 @@ $(".left-slide-editorials").click(function(){
                     "background-repeat": "no-repeat"
                 });
             });
-            console.log(ind);
+            //console.log(ind);
         },
         error: function(error){
             console.log(`Erorr ${error}`);

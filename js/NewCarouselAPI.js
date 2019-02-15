@@ -5,7 +5,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.new-carousel-date`);
             news.map((index, el) => {
@@ -43,7 +43,7 @@ $(".left-slide-carousel").click(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
 
             carouselIndex-=2;
             if(carouselIndex<0) carouselIndex=result.articles.length-2;
