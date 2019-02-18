@@ -1,4 +1,4 @@
-var bottomSliderIndex=0;
+var bottomSliderIndex=3;
 $(document).ready(function(){
     var url='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f100b3cb4ed147d192f5237f42e0970c';
     $.ajax({
@@ -15,16 +15,18 @@ $(document).ready(function(){
                 news.map((index, el) => {
                     //console.log(el, index);
                     //console.log(result.articles[index].urlToImage);
-                    
+                    $(el).removeClass("special");
+
                     $(el).css({
-                        "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
+                        "background-image": `url(${result.articles[index].urlToImage})`,
                         "background-position": "center",
                         "background-size": "cover",
                         "background-repeat": "no-repeat"
                     });
-                    if(index == 3){
+                    if(index == bottomSliderIndex){
+                        $(el).addClass("special");
                         background.css({
-                            "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
+                            "background-image": `url(${result.articles[index].urlToImage})`,
                             "background-position": "center",
                             "background-size": "cover",
                             "background-repeat": "no-repeat"
@@ -50,30 +52,48 @@ $(".left-arrow-bottom-slider").click(function(){
             //console.log(result.articles[0].publishedAt);
 
             //$(".news-date").text(result.articles[0].publishedAt);
-            bottomSliderIndex-=1;
-
+            
             var background = $(`.bottom-slider`);
             var news = $(`.bottom-slider-img`);
-                news.map((index, el) => {
-                    //console.log(el, index);
-                    //console.log(result.articles[index].urlToImage);
-                    
+
+
+            bottomSliderIndex-=1;
+            if(bottomSliderIndex<0) bottomSliderIndex=news.length-1;
+            //news.last().insertBefore(news.first());
+            
+            news.map((index, el) => {
+                //console.log(el, index);
+                //console.log(result.articles[index].urlToImage);
+                    $(el).removeClass("special");
+
                     $(el).css({
-                        "background-image": `url(${result.articles[index+bottomSliderIndex+3].urlToImage})`,
+                        "background-image": `url(${result.articles[index].urlToImage})`,
                         "background-position": "center",
                         "background-size": "cover",
                         "background-repeat": "no-repeat"
                     });
-                    if(index == 3){
+                    if(index==bottomSliderIndex){
+                        $(el).addClass("special");
                         background.css({
-                            "background-image": `url(${result.articles[index+bottomSliderIndex+3].urlToImage})`,
+                            "background-image": `url(${result.articles[index].urlToImage})`,
                             "background-position": "center",
                             "background-size": "cover",
                             "background-repeat": "no-repeat"
-                        });  
+                        });
                     }
-                });
-
+                    /*if(index==3){
+                        $(el).addClass("special");
+                        background.css({
+                            "background-image": `url(${result.articles[index].urlToImage})`,
+                            "background-position": "center",
+                            "background-size": "cover",
+                            "background-repeat": "no-repeat"
+                        }); 
+                    }*/
+                    
+                
+            });
+            
 
         },
         error: function(error){
@@ -93,60 +113,45 @@ $(".right-arrow-bottom-slider").click(function(){
             //console.log(result.articles[0].publishedAt);
 
             bottomSliderIndex+=1;
-            if(bottomSliderIndex+3>result.articles.length-4){
+            
             var background = $(`.bottom-slider`);
             var news = $(`.bottom-slider-img`);
+            if(bottomSliderIndex>news.length-1)bottomSliderIndex=0;
+            //news.first().insertAfter(news.last());
+
                 news.map((index, el) => {
                     //console.log(el, index);
                     //console.log(result.articles[index].urlToImage);
-                    if(index == 6){
-                            $(".7").css({
-                                "visibility": "hidden"
+                        $(el).removeClass("special");
+
+                        $(el).css({
+                            "background-image": `url(${result.articles[index].urlToImage})`,
+                            "background-position": "center",
+                            "background-size": "cover",
+                            "background-repeat": "no-repeat"
+                        });
+                        if(index==bottomSliderIndex){
+                            $(el).addClass("special");
+                            background.css({
+                                "background-image": `url(${result.articles[index].urlToImage})`,
+                                "background-position": "center",
+                                "background-size": "cover",
+                                "background-repeat": "no-repeat"
                             });
                         }
-                        $(el).css({
-                            "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
-                            "background-position": "center",
-                            "background-size": "cover",
-                            "background-repeat": "no-repeat"
-                        });
-                        if(index == 3){
+                        /*if(index==3){
+                            $(el).addClass("special");
                             background.css({
-                                "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
+                                "background-image": `url(${result.articles[index].urlToImage})`,
                                 "background-position": "center",
                                 "background-size": "cover",
                                 "background-repeat": "no-repeat"
-                            });  
-                        }
+                            }); 
+                        }*/
                         
+                    
                 });
             
-                
-            }
-            else{
-            var background = $(`.bottom-slider`);
-            var news = $(`.bottom-slider-img`);
-                news.map((index, el) => {
-                    //console.log(el, index);
-                    //console.log(result.articles[index].urlToImage);
-                    
-                        $(el).css({
-                            "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
-                            "background-position": "center",
-                            "background-size": "cover",
-                            "background-repeat": "no-repeat"
-                        });
-                        if(index == 3){
-                            background.css({
-                                "background-image": `url(${result.articles[index+bottomSliderIndex].urlToImage})`,
-                                "background-position": "center",
-                                "background-size": "cover",
-                                "background-repeat": "no-repeat"
-                            });  
-                        }
-                    
-                });
-            }
         },
         error: function(error){
             console.log(`Erorr ${error}`);
