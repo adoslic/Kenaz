@@ -158,3 +158,36 @@ $(".right-arrow-bottom-slider").click(function(){
         }
     });
 });
+
+/*$(".search-icon").click(function(){
+    
+    var bg = $(".special").css('background-image');
+    //alert(bg);
+    bg = bg.replace('url(','').replace(')','');
+    alert(bg);
+    $('.showImg').css({
+        "src": bg,
+        "background-position": "center",
+        "background-size": "cover",
+        "background-repeat": "no-repeat",
+        "display": "block"
+    }); 
+});*/
+
+$('.hiddenImage').css({
+    "background-image": `url(img/slider1.jpg)`,
+    "background-position": "center",
+    "background-size": "cover",
+    "background-repeat": "no-repeat"
+}); 
+
+$(".search-icon").click(function(){
+    $('.hiddenImage').toggle(function () {
+        $(".hiddenImage").addClass("active");
+    }, function () {
+        $(".hiddenImage").removeClass("active");
+    });
+});
+$(".exit").click(function(){
+    $(".hiddenImage").removeClass("active");
+});

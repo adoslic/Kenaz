@@ -141,6 +141,22 @@ body {
         height: 120px; }
       #containter .bottom-slider .bottom-slider-img-container .special {
         border: solid white 2px; }
+  #containter .hiddenImage {
+    display: none;
+    width: 940px;
+    height: 400px;
+    border: solid red 1px; }
+    #containter .hiddenImage .active {
+      display: block; }
+    #containter .hiddenImage .exit {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      padding: 5px 0; }
 
 .footer {
   background-color: #252525;
@@ -150,25 +166,16 @@ body {
   .footer .footer940x1000 {
     width: 940px;
     height: 1000px;
-    color: white;
+    color: #707070;
     margin: auto;
     padding-top: 40px;
     border: solid red 1px; }
     .footer .footer940x1000 .upFooter {
-      border: solid red 1px;
-      height: 175px; }
-      .footer .footer940x1000 .upFooter span {
-        margin-left: 10px;
-        color: white;
-        font-size: 35px;
-        vertical-align: middle;
-        margin-bottom: 15px; }
+      border: solid red 1px; }
       .footer .footer940x1000 .upFooter .specialColor {
-        margin-left: 10px;
-        color: #45B0E3;
-        font-size: 35px;
-        vertical-align: middle;
-        margin-bottom: 15px; }
+        color: #45B0E3; }
+      .footer .footer940x1000 .upFooter p {
+        padding: 15px 0 10px 0; }
       .footer .footer940x1000 .upFooter .socialMediaImage {
         margin-top: 10px;
         display: flex;
@@ -182,5 +189,19 @@ body {
         font-size: 18px;
         padding: 10px;
         height: 50px;
-        border: solid red 1px;
         display: inline-block; }
+      .footer .footer940x1000 .upFooter .tags {
+        margin-top: 15px; }
+        .footer .footer940x1000 .upFooter .tags .tags-box {
+          background-color: #333333;
+          margin: 1px;
+          padding: 5px 5px;
+          display: inline-block; }
+          .footer .footer940x1000 .upFooter .tags .tags-box:hover {
+            cursor: pointer;
+            background-color: #4D4382;
+            color: white; }
+    .footer .footer940x1000 span {
+      margin-left: 10px;
+      color: white;
+      font-size: 35px; }

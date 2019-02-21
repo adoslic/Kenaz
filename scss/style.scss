@@ -193,7 +193,26 @@ body{
       }
     }
   }
-  
+  .hiddenImage{
+    display: none;
+    width: 940px;
+    height: 400px;
+    //background-color: red;
+    border: solid red 1px;
+    .active{
+      display: block;
+    }
+    .exit{
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      padding: 5px 0;
+    }
+  }
 }
 .footer{
   background-color: #252525;
@@ -204,26 +223,19 @@ body{
   .footer940x1000{
     width: 940px;
     height: 1000px;
-    color: white;
+    color: #707070;
     margin: auto;
     padding-top: 40px;
     border: solid red 1px;
     .upFooter{
       border: solid red 1px;
-      height: 175px;
-      span{
-        margin-left: 10px;
-        color: white;
-        font-size: 35px;
-        vertical-align: middle;
-        margin-bottom: 15px;
-      }
+      //height: 175px;
+      
       .specialColor{
-        margin-left: 10px;
         color: #45B0E3;
-        font-size: 35px;
-        vertical-align: middle;
-        margin-bottom: 15px;
+      }
+      p{
+        padding: 15px 0 10px 0;
       }
       .socialMediaImage{
         //border: solid red 1px;
@@ -245,9 +257,29 @@ body{
         font-size: 18px;
         padding: 10px;
         height: 50px;
-        border: solid red 1px;
+        //border: solid red 1px;
         display: inline-block;
       }
+      .tags{
+        margin-top: 15px;
+        .tags-box{
+          background-color: #333333;
+          margin: 1px;
+          padding: 5px 5px;
+          display: inline-block;
+          &:hover{
+            cursor: pointer;
+            background-color: #4D4382;
+            color: white; 
+          }
+        }
+      }
+    }
+    span{
+      margin-left: 10px;
+      color: white;
+      font-size: 35px;
+      //vertical-align: middle;
     }
   }
 }
