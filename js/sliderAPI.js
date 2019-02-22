@@ -5,18 +5,26 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.slider-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                //$(el).text(result.articles[index].publishedAt);
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.slider-description`);
             news.map((index, el) => {
                 //console.log(el, index);
                 $(el).text(result.articles[index].title);
             });
+
+            news = $(`.news-number`);
+            news.map((index, el) => {
+                //console.log(el, index);
+                $(el).text(1 + Math.floor(Math.random() * 100));
+            });
+
             news = $(`.slider-img`);
             news.map((index, el) => {
                 //console.log(el, index);
@@ -50,13 +58,21 @@ $(".left-arrow-main-slider").click(function(){
             var news = $(`.slider-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+slider_index].publishedAt);
+                $(el).text(moment(result.articles[index+slider_index].publishedAt, 'YYYY-MM-DD').format('LLL'));
+                //$(el).text(result.articles[index+slider_index].publishedAt);
             });
             news = $(`.slider-description`);
             news.map((index, el) => {
                 //console.log(el, index);
                 $(el).text(result.articles[index+slider_index].title);
             });
+
+            news = $(`.news-number`);
+            news.map((index, el) => {
+                //console.log(el, index);
+                $(el).text(1 + Math.floor(Math.random() * 100));
+            });
+
             news = $(`.slider-img`);
             news.map((index, el) => {
                 //console.log(el, index);
@@ -91,13 +107,21 @@ $(".left-arrow-main-slider").click(function(){
             var news = $(`.slider-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+slider_index].publishedAt);
+                //$(el).text(result.articles[index+slider_index].publishedAt);
+                $(el).text(moment(result.articles[index+slider_index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.slider-description`);
             news.map((index, el) => {
                 //console.log(el, index);
                 $(el).text(result.articles[index+slider_index].title);
             });
+
+            news = $(`.news-number`);
+            news.map((index, el) => {
+                //console.log(el, index);
+                $(el).text(1 + Math.floor(Math.random() * 100));
+            });
+
             news = $(`.slider-img`);
             news.map((index, el) => {
                 //console.log(el, index);

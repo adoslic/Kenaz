@@ -26,7 +26,7 @@
     //border-left: solid 10px #3677B5;
     .newsImageContainer{
         //border: solid red 1px;
-        width: 160px;
+        width: 163px;
         height: 90px;
     }
     .news-img, .sport-img{
@@ -58,7 +58,7 @@
         //color: #797979;
         //margin-top: 0;
     }
-    .broj{
+    .news-number{
         margin-top: 5px;
         margin-left: 2px;
     }
@@ -114,6 +114,10 @@
     .description{
         color: #797979;
         max-height: 55px;
+        width: 130px;
+    }
+    .margin{
+        height: 10px;
     }
 }
 .new-carousel{
@@ -123,7 +127,7 @@
     }
     .newsImageContainer{
         //border: solid red 1px;
-        width: 250px;;
+        width: 260px;;
         height: 150px;
         margin-top: 5px;
     }
@@ -132,7 +136,7 @@
         max-height: 20px;
     }
     .hover{
-        width: 30px;
+        width: 25px;
         height: 30px;
         cursor: pointer;
         //border: solid red 1px;
@@ -164,7 +168,7 @@
 }
 .editorials, .local-news{
     border-left: solid 10px #A99765;
-    width: 290px;
+    width: 300px;
     float: left;
     //margin-bottom: 20px;
     //margin: 0 10px 0 0;
@@ -184,7 +188,7 @@
         margin-left: 15px;    
     }
     .hover{
-        width: 30px;
+        width: 25px;
         height: 30px;
         cursor: pointer;
         //padding-left: 7px;
@@ -219,13 +223,11 @@
         clear: both;
     }
 }
-.editorials
-{
-    margin-right: 20px;
+.editorials{
+    margin-right: 10px;
 }
-.local-news
-{
-    margin-left: 20px;
+.local-news{
+    margin-left: 10px;
 }
 #padding{
     padding: 0 10px 10px 5px;

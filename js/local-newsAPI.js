@@ -5,12 +5,13 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(result){
-            console.log(result);
+            //console.log(result);
             
             var news = $(`.local-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                //$(el).text(result.articles[index].publishedAt);
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.local-description`);
             news.map((index, el) => {
@@ -50,7 +51,8 @@ $(".left-slide-local").click(function(){
             var news = $(`.local-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+localIndex].publishedAt);
+                $(el).text(moment(result.articles[index+localIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
+                //$(el).text(result.articles[index+localIndex].publishedAt);
             });
             news = $(`.local-description`);
             news.map((index, el) => {
@@ -91,7 +93,7 @@ $(".left-slide-local").click(function(){
             var news = $(`.local-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+localIndex].publishedAt);
+                $(el).text(moment(result.articles[index+localIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.local-description`);
             news.map((index, el) => {

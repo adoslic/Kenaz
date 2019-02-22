@@ -10,7 +10,7 @@ $(document).ready(function(){
             var news = $(`.sport-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.sport-description`);
             news.map((index, el) => {

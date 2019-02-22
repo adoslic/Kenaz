@@ -43,6 +43,8 @@
       font-size: 18px;
       padding: 5px 15px;
       cursor: pointer; }
+    .slidercontainer .sliderText .inline {
+      display: inline-block; }
     .slidercontainer .sliderText a {
       text-decoration: none;
       color: white; }

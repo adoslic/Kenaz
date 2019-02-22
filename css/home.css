@@ -16,7 +16,7 @@
     cursor: pointer;
     width: 100%; }
   .category .newsImageContainer {
-    width: 160px;
+    width: 163px;
     height: 90px; }
   .category .titleOfArticle {
     margin-bottom: 10px; }
@@ -28,7 +28,7 @@
     margin-bottom: 5px; }
   .category .imgRight {
     float: right; }
-  .category .broj {
+  .category .news-number {
     margin-top: 5px;
     margin-left: 2px; }
   .category .see-all {
@@ -58,20 +58,23 @@
     margin-top: 10px; }
   .business .description {
     color: #797979;
-    max-height: 55px; }
+    max-height: 55px;
+    width: 130px; }
+  .business .margin {
+    height: 10px; }
 
 .new-carousel {
   border-left: solid 10px #FCC44D; }
   .new-carousel .imgSpace {
     margin-left: 15px; }
   .new-carousel .newsImageContainer {
-    width: 250px;
+    width: 260px;
     height: 150px;
     margin-top: 5px; }
   .new-carousel .description {
     max-height: 20px; }
   .new-carousel .hover {
-    width: 30px;
+    width: 25px;
     height: 30px;
     cursor: pointer; }
   .new-carousel .arrow-right {
@@ -97,7 +100,7 @@
 
 .editorials, .local-news {
   border-left: solid 10px #A99765;
-  width: 290px;
+  width: 300px;
   float: left; }
   .editorials .newsImageContainer, .local-news .newsImageContainer {
     width: 230px;
@@ -108,7 +111,7 @@
   .editorials .imgSpace, .local-news .imgSpace {
     margin-left: 15px; }
   .editorials .hover, .local-news .hover {
-    width: 30px;
+    width: 25px;
     height: 30px;
     cursor: pointer; }
   .editorials .arrow-right, .local-news .arrow-right {
@@ -135,10 +138,10 @@
     clear: both; }
 
 .editorials {
-  margin-right: 20px; }
+  margin-right: 10px; }
 
 .local-news {
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 #padding {
   padding: 0 10px 10px 5px; }

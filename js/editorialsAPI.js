@@ -10,7 +10,8 @@ $(document).ready(function(){
             var news = $(`.editorials-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.editorials-description`);
             news.map((index, el) => {
@@ -50,7 +51,8 @@ $(".left-slide-editorials").click(function(){
             var news = $(`.editorials-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+editorialsIndex].publishedAt);
+                //$(el).text(result.articles[index+editorialsIndex].publishedAt);
+                $(el).text(moment(result.articles[index+editorialsIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.editorials-description`);
             news.map((index, el) => {
@@ -91,7 +93,7 @@ $(".left-slide-editorials").click(function(){
             var news = $(`.editorials-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+editorialsIndex].publishedAt);
+                $(el).text(moment(result.articles[index+editorialsIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.editorials-description`);
             news.map((index, el) => {

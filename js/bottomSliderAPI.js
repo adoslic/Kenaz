@@ -174,20 +174,37 @@ $(".right-arrow-bottom-slider").click(function(){
     }); 
 });*/
 
-$('.hiddenImage').css({
+/*$('.hiddenImage').css({
     "background-image": `url(img/slider1.jpg)`,
     "background-position": "center",
     "background-size": "cover",
     "background-repeat": "no-repeat"
-}); 
+}); */
 
 $(".search-icon").click(function(){
-    $('.hiddenImage').toggle(function () {
-        $(".hiddenImage").addClass("active");
+    var bg = $(".special").css('background-image');
+    $('.hiddenImage').css({
+        "background-image": bg,
+        "background-position": "center",
+        "background-size": "cover",
+        "background-repeat": "no-repeat"
+    }); 
+    $('.Bslider').hide();
+    $('.bottom-slider-img-container').hide();
+    
+    $('.exit').toggle(function () {
+        $(".exit").addClass("active");
     }, function () {
-        $(".hiddenImage").removeClass("active");
+        $(".exit").removeClass("active");
     });
+    
 });
 $(".exit").click(function(){
-    $(".hiddenImage").removeClass("active");
+    $('.exit').toggle(function () {
+        $(".exit").removeClass("active");
+    }, function () {
+        $(".exit").addClass("active");
+    });
+    $('.Bslider').show();
+    $('.bottom-slider-img-container').show();
 });

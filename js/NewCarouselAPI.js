@@ -10,7 +10,7 @@ $(document).ready(function(){
             var news = $(`.new-carousel-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.new-carousel-description`);
             news.map((index, el) => {
@@ -50,7 +50,8 @@ $(".left-slide-carousel").click(function(){
             var news = $(`.new-carousel-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+carouselIndex].publishedAt);
+                //$(el).text(result.articles[index+carouselIndex].publishedAt);
+                $(el).text(moment(result.articles[index+carouselIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.new-carousel-description`);
             news.map((index, el) => {
@@ -91,7 +92,7 @@ $(".left-slide-carousel").click(function(){
             var news = $(`.new-carousel-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index+carouselIndex].publishedAt);
+                $(el).text(moment(result.articles[index+carouselIndex].publishedAt, 'YYYY-MM-DD').format('LLL'));
             });
             news = $(`.new-carousel-description`);
             news.map((index, el) => {

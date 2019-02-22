@@ -27,8 +27,17 @@ $(document).ready(function(){
             var news = $(`.middle-one-text-date`);
             news.map((index, el) => {
                 //console.log(el, index);
-                $(el).text(result.articles[index].publishedAt);
+                //$(el).text(result.articles[index].publishedAt);
+                $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
+                
             });
+
+            news = $(`.middle-one-text-number`);
+                    news.map((index, el) => {
+                        //console.log(el, index);
+                        $(el).text(1 + Math.floor(Math.random() * 100));
+                    });
+
             news = $(`.middle-one-text-description`);
             news.map((index, el) => {
                 //console.log(el, index);
@@ -81,13 +90,22 @@ $(".first-link").click(function(){
                 var news = $(`.middle-one-text-date`);
                 news.map((index, el) => {
                     //console.log(el, index);
-                    $(el).text(result.articles[index].publishedAt);
+                    //$(el).text(result.articles[index].publishedAt);
+                    $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
+                
                 });
                 news = $(`.middle-one-text-description`);
                 news.map((index, el) => {
                     //console.log(el, index);
                     $(el).text(result.articles[index].title);
                 });
+
+                news = $(`.middle-one-text-number`);
+                news.map((index, el) => {
+                    //console.log(el, index);
+                    $(el).text(1 + Math.floor(Math.random() * 100));
+                });
+
                 news = $(`.middle-one-text-img`);
                 news.map((index, el) => {
                     //console.log(el, index);
@@ -136,13 +154,21 @@ $(".second-link").click(function(){
                 var news = $(`.middle-one-text-date`);
                 news.map((index, el) => {
                     //console.log(el, index);
-                    $(el).text(result.articles[index].publishedAt);
+                    //$(el).text(result.articles[index].publishedAt);
+                    $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
                 });
                 news = $(`.middle-one-text-description`);
                 news.map((index, el) => {
                     //console.log(el, index);
                     $(el).text(result.articles[index].title);
                 });
+
+                news = $(`.middle-one-text-number`);
+                news.map((index, el) => {
+                    //console.log(el, index);
+                    $(el).text(1 + Math.floor(Math.random() * 100));
+                });
+
                 news = $(`.middle-one-text-img`);
                 news.map((index, el) => {
                     //console.log(el, index);
@@ -190,13 +216,21 @@ $(".third-link").click(function(){
                     var news = $(`.middle-one-text-date`);
                     news.map((index, el) => {
                         //console.log(el, index);
-                        $(el).text(result.articles[index].publishedAt);
+                        //$(el).text(result.articles[index].publishedAt);
+                        $(el).text(moment(result.articles[index].publishedAt, 'YYYY-MM-DD').format('LLL'));
                     });
                     news = $(`.middle-one-text-description`);
                     news.map((index, el) => {
                         //console.log(el, index);
                         $(el).text(result.articles[index].title);
                     });
+
+                    news = $(`.middle-one-text-number`);
+                    news.map((index, el) => {
+                        //console.log(el, index);
+                        $(el).text(1 + Math.floor(Math.random() * 100));
+                    });
+
                     news = $(`.middle-one-text-img`);
                     news.map((index, el) => {
                         //console.log(el, index);
